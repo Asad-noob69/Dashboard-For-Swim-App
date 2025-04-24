@@ -174,11 +174,6 @@ const Sidebar = ({
       title: 'FAQs & Help',
       path: '/help',
       icon: <HelpCenterIcon />
-    },
-    {
-      title: 'Referral System',
-      path: '/referrals',
-      icon: <CardGiftcardIcon />
     }
   ];
 

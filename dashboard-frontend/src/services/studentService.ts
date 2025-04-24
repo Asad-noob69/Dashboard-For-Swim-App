@@ -1,4 +1,5 @@
 import apiClient from './apiClient';
+import { mockStudents } from '../mocks/studentMocks';
 
 // Student related types
 export interface Student {
@@ -30,8 +31,13 @@ export type StudentUpdateRequest = Partial<StudentCreateRequest>;
 const StudentService = {
   // Get all students
   getAllStudents: async () => {
+    try {
     const response = await apiClient.get<Student[]>('/students');
     return response.data;
+    }catch(error) {
+      console.warn('API call failed, using mock data instead:', error);
+      return mockStudents; // Fallback to mock data
+    }
   },
 
   // Get student by ID

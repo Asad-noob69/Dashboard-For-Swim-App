@@ -26,11 +26,10 @@ import StudentBookings from './pages/students/StudentBookings';
 import PaymentManagement from './pages/payments/PaymentManagement';
 import ProgressTracking from './pages/progress/ProgressTracking';
 import ReportsAnalytics from './pages/reports/ReportsAnalytics';
-import AttendanceManagement from './pages/attendance/AttendanceManagement';
+import AttendanceManagement from './pages/attendance/AttendenceManagement';
 import NotificationsPage from './pages/notifications/NotificationsPage';
 import MediaGallery from './pages/media/MediaGallery';
 import Help from './pages/help/Help';
-import ReferralSystem from './pages/referrals/ReferralSystem';
 import Login from './pages/auth/Login';
 import NotFound from './pages/NotFound';
 
@@ -145,8 +144,6 @@ const App = () => {
             {/* FAQs & Help */}
             <Route path="/help" element={<Help />} />
             
-            {/* Referral System */}
-            <Route path="/referrals" element={<ReferralSystem />} />
           </Route>
 
           {/* 404 Not Found */}

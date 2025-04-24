@@ -71,11 +71,6 @@ const PaymentSchema = new mongoose.Schema(
       type: Number,
       default: 0,
     },
-    discountReason: String,
-    appliedReferralCode: String,
-    metadata: {
-      type: mongoose.Schema.Types.Mixed,
-    },
   },
   {
     timestamps: true,
